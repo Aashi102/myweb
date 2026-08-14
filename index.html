@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | Aashi's Website</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #8b5e5e, #5e8b83);
+      color: #222;
+      font-family: 'Poppins', Arial, sans-serif;
+    }
+
+    header {
+      background: rgba(40, 40, 40, 0.85);
+      color: #f3f3f3;
+      padding: 25px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    nav ul li a {
+      color: #f3f3f3;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffd166;
+      text-shadow: 0 0 8px #ffd166;
+    }
+
+    main {
+      background: rgba(255, 255, 255, 0.95);
+      max-width: 850px;
+      margin: 30px auto;
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 30px;
+      color: #8b5e5e;
+      text-shadow: 1px 1px 3px #c8a49f;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #7b4747;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: #555;
+      max-width: 650px;
+      margin: 0 auto 40px;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    img.profile-img {
+      max-width: 180px;
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(139, 94, 94, 0.5);
+      animation: pulseGlow 3s ease-in-out infinite;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    footer a {
+      color: #ffd166;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animations */
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        filter: drop-shadow(0 0 2px #d4a5a5);
+      }
+      50% {
+        filter: drop-shadow(0 0 10px #d4a5a5);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to my personal website! Enjoy your stay! ❤️</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="qmyinterests.html">My Interests</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-me">
+      <h2>All about me! 😋</h2>
+      <img src="assets/waterfall.jpg" alt="One of my interests that I find mesmerizing!" class="profile-img" />
+      <p>
+        Hello! My name is Aashi and I'm a rising sophomore in Texas (15 years old)! 
+        I really like artsy things such as drawing, painting, and other creative activities. 
+        I also like to enhance my coding skills and I'm really interested in learning more about 
+        coding for my future.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Some images sourced from 
+       <a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">Pixabay</a>.
+    </p>
+  </footer>
+</body>
+</html>
